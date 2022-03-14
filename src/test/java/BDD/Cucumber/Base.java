@@ -12,5 +12,10 @@ public class Base {
 		driver=new EdgeDriver();
 		driver.get("https://www.google.com/");
 	}
+	
+	public void afterClass()
+	{
+		driver.quit();
+	}
 
 }
